@@ -1,0 +1,131 @@
+.account-modal {
+    position: fixed;
+    width: 90%; /* Ajuste para dispositivos móviles */
+    max-width: 400px; /* Ancho máximo para pantallas más grandes */
+    min-height: 200px; /* Aumenta la altura mínima para mayor comodidad */
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.842) 0%, rgba(255,255,255,1) 98%);
+    backdrop-filter: blur(10px);
+    top: -100%; /* Inicialmente fuera de la pantalla */
+    right: 0;
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    border-left: #00000063 1px solid; /* Borde izquierdo */
+    border-bottom: #00000063 1px solid; /* Borde inferior */
+    border-bottom-left-radius: 15px;
+    transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Animación de desplazamiento y opacidad */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+.account-modal.show {
+    top: 90px; 
+    opacity: 1; /* Muestra el modal */
+    pointer-events: auto; /* Permite interacción */
+}
+
+.account-modal__content {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px; /* Añade padding para mayor comodidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-account {
+    letter-spacing: 1px;
+    font-size: 24px; /* Ajusta el tamaño de la fuente */
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    margin-bottom: 5px; /* Añade espacio debajo */
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.account-mail {
+    font-size: 14px; /* Aumenta un poco el tamaño de la fuente */
+    color: #666; /* Color de texto más claro */
+    margin-bottom: 15px; /* Añade espacio debajo */
+}
+
+.account-management {
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+.management {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    border-bottom: #0000002c 1px solid;
+    padding-bottom: 10px; /* Añade espacio inferior */
+    margin-top: 20px;
+}
+
+.logout-button, .manage-button, .login-button-modal {
+    margin-top: 10px; 
+    width: 100%; /* Asegúrate de que los botones ocupen todo el ancho disponible */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave para el color de fondo y transformación */
+}
+
+
+.logout-button {
+    background-color: transparent;
+    color: #be0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.modal-logout-button {
+    width: 24px;
+}
+
+.logout-button:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.login-button-modal {
+    background-color: transparent;
+    color: #14A2C9;
+    font-size: 17px;
+    border: 1px solid #14a2c941;
+    padding: 5px;
+    transition: color 0.5s, background-color 0.5s, transform 0.5s;
+}
+
+.login-button-modal:hover {
+    background-color: #14a2c9a9; /* Color de hover más oscuro para mejor contraste */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    color: #fff;
+}
+
+.manage-button {
+    background-color: transparent; 
+    color: #000; /* Color de texto blanco */
+    padding: 5px 0;
+}
+
+.manage-button:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.login-prompt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-prompt {
+    font-weight: 600;
+}
+
+.login-prompt-container p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}

@@ -1,0 +1,78 @@
+.add-method-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-left: 270px;
+    
+  }
+  
+  .add-method-form h2 {
+    font-size: 24px; 
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .AddMethodPayment-fom {
+    padding: 10px;
+  }
+
+  .AddMethodPayment-fom h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #4E4E4E;
+  }
+  
+  .input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    margin-bottom: 20px;
+  }
+  
+  .full-width {
+    grid-column: 1 / -1;
+  }
+  
+  .expiry, .cvc {
+    width: 100%;
+  }
+  
+  .terms {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: center; 
+  }
+  
+  .terms a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 30px;
+  }
+  
+  .cancel__button-add-method {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .save__button-cancel-method {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .save-btn:hover {
+    background-color: #555;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #ddd;
+  }
+  
