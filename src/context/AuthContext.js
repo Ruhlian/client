@@ -52,7 +52,7 @@ export const AuthProvider = ({ children }) => {
         }
 
         try {
-            const response = await fetch("http://localhost:3002/api/usuarios/verify-token", {
+            const response = await fetch("https://dbentquim-b3be12530fac.herokuapp.com/api/usuarios/verify-token", {
                 headers: { Authorization: `Bearer ${token}` },
             });
             const data = await response.json();
