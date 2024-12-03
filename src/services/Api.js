@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Configurar la URL base de tu API desde una variable de entorno
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:3002/api', // URL base de tu API
+  baseURL: process.env.REACT_APP_API_URL // URL base de tu API
 });
 
 // Interceptor para agregar el token de autorización en cada solicitud
